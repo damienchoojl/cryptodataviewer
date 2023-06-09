@@ -1,8 +1,8 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import HomePage from "./Data/Components/HomePage";
-import CryptoDetailsPage from "./Data/Components/CryptoDetailsPage";
-import ChartPage from "./Data/Components/ChartPage";
+import HomePage from "./Components/HomePage";
+import CryptoDetailsPage from "./Components/CryptoDetailsPage";
+import ChartPage from "./Components/ChartPage";
 
 export default function App() {
   return (
