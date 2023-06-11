@@ -27,7 +27,7 @@ export default function HomePage() {
 
   return (
     <>
-      Crypto Exchange:{" "}
+      Crypto Market:{" "}
       <input
         type="text"
         value={cryptoInput}
