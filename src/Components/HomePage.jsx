@@ -35,7 +35,9 @@ export default function HomePage() {
         required
         onChange={(e) => setCryptoInput(e.target.value)}
       />
-      <button onClick={handleCryptoSearch}>Search</button>
+      <button className="btn btn-primary" onClick={handleCryptoSearch}>
+        Search
+      </button>
       {cryptoList.map((crypto) => (
         <Link
           to={`/exchanges/${cryptoInput}`}
