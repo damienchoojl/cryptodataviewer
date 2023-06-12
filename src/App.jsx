@@ -10,7 +10,7 @@ export default function App() {
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/exchanges/:id" element={<CryptoDetailsPage />} />
-      <Route path="/calculator" element={<Calculator />} />
+      <Route path="/calculator/:id" element={<Calculator />} />
     </Routes>
   );
 }

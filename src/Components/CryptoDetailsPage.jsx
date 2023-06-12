@@ -25,7 +25,7 @@ export default function CryptoDetailsPage() {
   };
 
   const handleCalculator = () => {
-    navigate("/calculator");
+    navigate(`/calculator/${id}`);
   };
 
   if (!cryptoDetails) {
