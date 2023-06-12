@@ -26,13 +26,19 @@ export default function HomePage() {
 
   return (
     <>
-      Crypto Market:{" "}
-      <input
-        type="text"
-        value={cryptoInput}
-        required
-        onChange={(event) => setCryptoInput(event.target.value)}
-      />
+      <div class="form-floating mb-3">
+        <input
+          type="text"
+          class="form-control"
+          value={cryptoInput}
+          required
+          onChange={(event) => setCryptoInput(event.target.value)}
+          id="floatingInput"
+          placeholder="
+        "
+        />
+        <label for="floatingInput">Crypto Market</label>
+      </div>
       <button className="btn btn-outline-primary" onClick={handleCryptoSearch}>
         Search
       </button>
