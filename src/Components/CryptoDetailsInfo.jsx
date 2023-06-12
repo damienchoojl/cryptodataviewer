@@ -5,7 +5,7 @@ export default function CryptoDetailsInfo({ cryptoDetails }) {
   return (
     <>
       <h4>
-        Name<img src={cryptoDetails.image} alt="logo"></img>
+        Name: <img src={cryptoDetails.image} alt="logo"></img>
         {cryptoDetails.name}
       </h4>
       <hr></hr>
@@ -47,16 +47,12 @@ export default function CryptoDetailsInfo({ cryptoDetails }) {
             </td>
           </tr>
           <tr>
-            <td> Trade URL</td>
-            <td>
-              <a
-                href={cryptoDetails.tickers[3].trade_url}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {cryptoDetails.tickers[3].trade_url}
-              </a>
-            </td>
+            <td> Trade Price</td>
+            <td>{cryptoDetails.tickers[1].last}</td>
+          </tr>
+          <tr>
+            <td> Trade Volume - Last 24hrs</td>
+            <td>{cryptoDetails.trade_volume_24h_btc.toFixed(2)}</td>
           </tr>
         </tbody>
       </table>

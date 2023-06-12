@@ -1,12 +1,13 @@
-import { useNavigate, useParams } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 import CryptoDetailsInfo from "./CryptoDetailsInfo";
+import Calculator from "./Calculator";
 
 export default function CryptoDetailsPage() {
   const { id } = useParams();
   const navigate = useNavigate();
   const [cryptoDetails, setCryptoDetails] = useState(null);
+  const [calculatorVisible, setCalculatorVisible] = useState(false);
 
   useEffect(() => {
     async function fetchCryptoDetails() {
@@ -25,7 +26,11 @@ export default function CryptoDetailsPage() {
   };
 
   const handleCalculator = () => {
-    navigate(`/calculator/${id}`);
+    setCalculatorVisible(true);
+  };
+
+  const handleBuy = (tradeUrl) => {
+    window.open(tradeUrl, "_blank");
   };
 
   if (!cryptoDetails) {
@@ -41,6 +46,13 @@ export default function CryptoDetailsPage() {
       <button className="btn btn-outline-secondary" onClick={handleCalculator}>
         Calculator
       </button>
+      {calculatorVisible && (
+        <Calculator
+          currency={cryptoDetails.tickers[1]?.last}
+          tradeUrl={cryptoDetails.tickers[3]?.trade_url}
+          handleBuy={handleBuy}
+        />
+      )}
     </div>
   );
 }
