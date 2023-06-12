@@ -35,7 +35,7 @@ export default function HomePage() {
         required
         onChange={(e) => setCryptoInput(e.target.value)}
       />
-      <button className="btn btn-primary" onClick={handleCryptoSearch}>
+      <button className="btn btn-outline-primary" onClick={handleCryptoSearch}>
         Search
       </button>
       {cryptoList.map((crypto) => (

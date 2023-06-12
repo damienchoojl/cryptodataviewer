@@ -9,7 +9,9 @@ export default function CryptoDetailsPage() {
 
   return (
     <div>
-      <button onClick={handleHomeClick}>Home</button>
+      <button className="btn btn-outline-secondary" onClick={handleHomeClick}>
+        Home
+      </button>
     </div>
   );
 }
