@@ -9,17 +9,15 @@ export default function HomePage() {
   const navigate = useNavigate();
 
   const handleCryptoSearch = async () => {
-    try {
-      const response = await fetch(
-        `https://api.coingecko.com/api/v3/exchanges/${cryptoInput.toLowerCase()}`
-      );
-      const data = await response.json();
-      if (data) {
-        setCryptoList([data]);
-      } else {
-        setCryptoList([]);
-      }
-    } catch (error) {}
+    const response = await fetch(
+      `https://api.coingecko.com/api/v3/exchanges/${cryptoInput.toLowerCase()}`
+    );
+    const data = await response.json();
+    if (data) {
+      setCryptoList([data]);
+    } else {
+      setCryptoList([]);
+    }
   };
 
   const handleCryptoClick = (id) => {
@@ -33,7 +31,7 @@ export default function HomePage() {
         type="text"
         value={cryptoInput}
         required
-        onChange={(e) => setCryptoInput(e.target.value)}
+        onChange={(event) => setCryptoInput(event.target.value)}
       />
       <button className="btn btn-outline-primary" onClick={handleCryptoSearch}>
         Search
