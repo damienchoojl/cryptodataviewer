@@ -58,6 +58,7 @@ export default function CryptoDetailsPage() {
       <button className="btn btn-outline-primary" onClick={handleFacebook}>
         <img src={MyImage} style={{ width: "30px", height: "30px" }}></img>
       </button>
+      <p></p>
       {calculatorVisible && (
         <Calculator
           currency={cryptoDetails.tickers[0]?.last}
