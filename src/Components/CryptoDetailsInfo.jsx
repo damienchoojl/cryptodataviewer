@@ -59,5 +59,3 @@ export default function CryptoDetailsInfo({ cryptoDetails }) {
     </>
   );
 }
-
-// To put image and when clicked, will link to the particular link

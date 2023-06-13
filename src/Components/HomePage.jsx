@@ -5,18 +5,32 @@ import "bootstrap/dist/css/bootstrap.min.css";
 export default function HomePage() {
   const [cryptoInput, setCryptoInput] = useState("");
   const [cryptoList, setCryptoList] = useState([]);
+  const [searchHistory, setSearchHistory] = useState([]);
+  const [showHistory, setShowHistory] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
   const navigate = useNavigate();
 
   const handleCryptoSearch = async () => {
+    if (cryptoInput === "") {
+      setErrorMessage("Please enter a valid crypto name");
+      return;
+    }
+
     const response = await fetch(
       `https://api.coingecko.com/api/v3/exchanges/${cryptoInput.toLowerCase()}`
     );
     const data = await response.json();
     if (data) {
       setCryptoList([data]);
+      setSearchHistory((prevHistory) => [
+        ...prevHistory,
+        { name: cryptoInput, time: new Date().toLocaleString() },
+      ]);
+      setErrorMessage("");
     } else {
       setCryptoList([]);
+      setErrorMessage("No results found");
     }
   };
 
@@ -25,23 +39,22 @@ export default function HomePage() {
   };
 
   const handleShowHistory = () => {
-    console.log("Show History Table");
+    setShowHistory(true);
   };
 
   return (
     <>
-      <div class="form-floating mb-3">
+      <div className="form-floating mb-3">
         <input
           type="text"
-          class="form-control"
+          className="form-control"
           value={cryptoInput}
           required
           onChange={(event) => setCryptoInput(event.target.value)}
           id="floatingInput"
-          placeholder="
-        "
+          placeholder=""
         />
-        <label for="floatingInput">Crypto Market</label>
+        <label htmlFor="floatingInput">Crypto Market</label>
       </div>
       <button className="btn btn-outline-primary" onClick={handleCryptoSearch}>
         Search
@@ -59,6 +72,28 @@ export default function HomePage() {
           {crypto.name}
         </Link>
       ))}
+      {errorMessage && <p>{errorMessage}</p>}
+      {showHistory && searchHistory.length > 0 && (
+        <div>
+          <h2>Search History</h2>
+          <table className="table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Time</th>
+              </tr>
+            </thead>
+            <tbody>
+              {searchHistory.map((query, index) => (
+                <tr key={index}>
+                  <td>{query.name}</td>
+                  <td>{query.time}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      )}
     </>
   );
 }

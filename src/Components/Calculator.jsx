@@ -4,8 +4,8 @@ export default function Calculator({ currency, tradeUrl }) {
   const [quantity, setQuantity] = useState("");
   const [total, setTotal] = useState(null);
 
-  const handleQuantityChange = (e) => {
-    setQuantity(e.target.value);
+  const handleQuantityChange = (event) => {
+    setQuantity(event.target.value);
   };
 
   const handleCalculate = () => {
