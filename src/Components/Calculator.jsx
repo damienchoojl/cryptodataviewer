@@ -33,15 +33,15 @@ export default function Calculator({ currency, tradeUrl }) {
           required
         />
       </div>
-      <button className="btn btn-primary" onClick={handleCalculate}>
+      <button className="btn btn-outline-primary" onClick={handleCalculate}>
         Calculate
       </button>
-      <button className="btn btn-primary" onClick={handleBuy}>
-        Buy
+      <button className="btn btn-outline-warning" onClick={handleBuy}>
+        Trade
       </button>
       {total && (
         <div className="mt-3">
-          <h4>Total</h4>
+          <h4>Total Price</h4>
           <p>{total}</p>
         </div>
       )}
