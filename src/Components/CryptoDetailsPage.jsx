@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import CryptoDetailsInfo from "./CryptoDetailsInfo";
 import Calculator from "./Calculator";
-import MyImage from "/Users/damienchoo/Documents/GitHub/cryptoexchanges/src/Images/facebook_logo.png";
+import MyImage from "/facebook_logo.png";
 
 export default function CryptoDetailsPage() {
   const { id } = useParams();

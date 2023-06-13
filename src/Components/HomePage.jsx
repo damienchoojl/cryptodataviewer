@@ -24,6 +24,10 @@ export default function HomePage() {
     navigate(`/exchanges/${id}`);
   };
 
+  const handleShowHistory = () => {
+    console.log("Show History Table");
+  };
+
   return (
     <>
       <div class="form-floating mb-3">
@@ -41,6 +45,9 @@ export default function HomePage() {
       </div>
       <button className="btn btn-outline-primary" onClick={handleCryptoSearch}>
         Search
+      </button>
+      <button className="btn btn-outline-primary" onClick={handleShowHistory}>
+        Search History
       </button>
       {cryptoList.map((crypto) => (
         <Link
