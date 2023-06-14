@@ -1,4 +1,4 @@
-<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Flogo.com%2Flogos%2Fcrypto&psig=AOvVaw3COLm-Zd5kHtATNmiSDPk3&ust=1686814262829000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCJCErfmewv8CFQAAAAAdAAAAABAE" width="400">
+<!-- <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Flogo.com%2Flogos%2Fcrypto&psig=AOvVaw3COLm-Zd5kHtATNmiSDPk3&ust=1686814262829000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCJCErfmewv8CFQAAAAAdAAAAABAE" width="400"> -->
 
 # Crypto Exchanges Library:
 
