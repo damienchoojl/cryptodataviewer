@@ -56,10 +56,10 @@ export default function HomePage() {
         />
         <label htmlFor="floatingInput">Crypto Market</label>
       </div>
-      <button className="btn btn-outline-primary" onClick={handleCryptoSearch}>
+      <button className="btn btn-primary" onClick={handleCryptoSearch}>
         Search
       </button>
-      <button className="btn btn-outline-primary" onClick={handleShowHistory}>
+      <button className="btn btn-primary" onClick={handleShowHistory}>
         Search History
       </button>
       {cryptoList.map((crypto) => (

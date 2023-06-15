@@ -20,10 +20,7 @@ export default function Calculator({ currency, tradeUrl }) {
   return (
     <div>
       <h2>Calculator</h2>
-      <div className="mb-3">
-        <label htmlFor="quantity" className="form-label">
-          Quantity
-        </label>
+      <div className="form-floating mb-3">
         <input
           type="number"
           className="form-control"
@@ -31,12 +28,16 @@ export default function Calculator({ currency, tradeUrl }) {
           value={quantity}
           onChange={handleQuantityChange}
           required
+          placeholder=""
         />
+        <label htmlFor="quantity" className="form-label">
+          Quantity
+        </label>
       </div>
-      <button className="btn btn-outline-primary" onClick={handleCalculate}>
+      <button className="btn btn-primary" onClick={handleCalculate}>
         Calculate
       </button>
-      <button className="btn btn-outline-warning" onClick={handleBuy}>
+      <button className="btn btn-primary" onClick={handleBuy}>
         Trade
       </button>
       {total && (

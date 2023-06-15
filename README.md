@@ -1,5 +1,3 @@
-<!-- <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Flogo.com%2Flogos%2Fcrypto&psig=AOvVaw3COLm-Zd5kHtATNmiSDPk3&ust=1686814262829000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCJCErfmewv8CFQAAAAAdAAAAABAE" width="400"> -->
-
 # Crypto Exchanges Library:
 
 Welcome to the Crypto Exchange Library!
@@ -47,3 +45,5 @@ Please note that the Crypto Exchanges Library is designed for educational and in
 Images are taken from Google. All rights belong to the original artists and owners.
 
 [Facebook Icon Logo](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.iconarchive.com%2Fshow%2Fsmall-n-flat-icons-by-paomedia%2Fsocial-facebook-icon.html&psig=AOvVaw0hbZw2GONchVkA9qwM9HGI&ust=1686814148668000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCIiRl8Oewv8CFQAAAAAdAAAAABAE)
+
+[Crypto Icon](https://www.creativefabrica.com/wp-content/uploads/2021/06/18/Cryptocurrency-Thor-Coin-Logo-Pile-Graphics-13553709-1.jpg)

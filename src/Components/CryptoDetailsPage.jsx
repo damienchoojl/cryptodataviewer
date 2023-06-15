@@ -46,10 +46,10 @@ export default function CryptoDetailsPage() {
   return (
     <div>
       <CryptoDetailsInfo cryptoDetails={cryptoDetails} />
-      <button className="btn btn-outline-secondary" onClick={handleHomeClick}>
+      <button className="btn btn-primary" onClick={handleHomeClick}>
         Home
       </button>
-      <button className="btn btn-outline-secondary" onClick={handleCalculator}>
+      <button className="btn btn-primary" onClick={handleCalculator}>
         Calculator
       </button>
       <br></br>
