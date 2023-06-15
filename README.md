@@ -26,7 +26,8 @@ React, Bootstrap with React
 
 # Ideation Sketch:
 
-[/Users/damienchoo/Downloads/ideation.jpg]
+![ideation](https://github.com/damienchoojl/cryptoexchanges/assets/128020380/f38cb4cf-083f-47d8-a7e6-6c485b7e747a)
+
 
 # Getting Started:
 
