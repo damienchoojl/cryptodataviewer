@@ -26,6 +26,8 @@ React, Bootstrap with React
 
 # Ideation Sketch:
 
+[/Users/damienchoo/Downloads/ideation.jpg]
+
 # Getting Started:
 
 Experience the thrill of the Crypto Exchanges Library! Explore the dynamic world of cryptocurrency trading with our feature-rich platform. Visit the Crypto Exchanges Library [here](https://cryptoexchanges.vercel.app/) and dive right into the action. Put your knowledge to the test, discover the hidden gems of the crypto market, and unlock valuable insights while immersing yourself in the captivating gameplay of our crypto-themed library. Don't miss out—start exploring now and see if you have what it takes to conquer the crypto trading arena and become the ultimate Crypto Exchanges Library champion!
@@ -37,8 +39,6 @@ Please note that the Crypto Exchanges Library is designed for educational and in
 1. Include purchase history
 
 2. Upgrade the Trade button to simulate purchasing of crypto currency
-
-# References:
 
 # Image
 
