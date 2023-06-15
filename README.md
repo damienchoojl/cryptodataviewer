@@ -20,13 +20,27 @@ Join our Crypto Exchange Library today and unlock a world of possibilities in th
 
 # Screenshot(s):
 
-# Technologies Used:
+1. Home Page
+<img width="1386" alt="Screenshot 2023-06-15 at 12 46 43" src="https://github.com/damienchoojl/cryptoexchanges/assets/128020380/31ec660f-8675-40b3-859e-97c058cc88fb">
 
-![ideation](https://github.com/damienchoojl/cryptoexchanges/assets/128020380/4dd8247e-de1a-43a6-afa9-742b4af743f3)
+2. Enter the name of the cryptocurrency market you are interested in and click the Search button. If the market exists, it will be displayed. Select the desired crypto from the search results to proceed to the next page. To access your search history, click on the Search History button.
+<img width="1346" alt="Screenshot 2023-06-15 at 12 46 53" src="https://github.com/damienchoojl/cryptoexchanges/assets/128020380/f2580d7c-ac7e-4697-8a08-f9d1dc1ab10d">
+<img width="1353" alt="Screenshot 2023-06-15 at 12 46 58" src="https://github.com/damienchoojl/cryptoexchanges/assets/128020380/06672b13-b887-4e46-a48d-b1f95ed8730f">
+
+3. Once you are on the next page, you will find detailed information about the selected market.
+<img width="1336" alt="Screenshot 2023-06-15 at 12 47 08" src="https://github.com/damienchoojl/cryptoexchanges/assets/128020380/6aaba18c-474c-40be-8e12-967db6b2d638">
+
+4. Click on the Calculator to review its functionality. Enter the desired quantity and click Calculate to determine the total cost of your purchase. The Trade button will direct you to the corresponding Crypto Market website for further trading activities.
+<img width="1336" alt="Screenshot 2023-06-15 at 12 47 08" src="https://github.com/damienchoojl/cryptoexchanges/assets/128020380/3bfb5c79-a9cf-4557-acf7-ac6fe0217f14">
+<img width="1350" alt="Screenshot 2023-06-15 at 12 47 18" src="https://github.com/damienchoojl/cryptoexchanges/assets/128020380/7182382a-48b7-462a-9353-b1bf25a8aa47">
+
+# Technologies Used:
 
 React, Bootstrap with React
 
 # Ideation Sketch:
+
+![ideation](https://github.com/damienchoojl/cryptoexchanges/assets/128020380/4dd8247e-de1a-43a6-afa9-742b4af743f3)
 
 # Getting Started:
 
