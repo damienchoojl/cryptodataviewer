@@ -22,6 +22,8 @@ Join our Crypto Exchange Library today and unlock a world of possibilities in th
 
 # Technologies Used:
 
+![ideation](https://github.com/damienchoojl/cryptoexchanges/assets/128020380/4dd8247e-de1a-43a6-afa9-742b4af743f3)
+
 React, Bootstrap with React
 
 # Ideation Sketch:
