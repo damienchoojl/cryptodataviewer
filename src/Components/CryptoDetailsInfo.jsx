@@ -48,7 +48,7 @@ export default function CryptoDetailsInfo({ cryptoDetails }) {
           </tr>
           <tr>
             <td> Trade Price</td>
-            <td>{cryptoDetails.tickers[0].last}</td>
+            <td>{cryptoDetails.tickers[0].last.toLocaleString()}</td>
           </tr>
           <tr>
             <td> Trade Volume</td>
