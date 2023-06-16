@@ -52,9 +52,13 @@ Please note that the Crypto Exchanges Library is designed for educational and in
 
 1. Include purchase history
 
-2. Upgrade the Trade button to simulate purchasing of crypto currency
+2. Upgrade the Trade button to simulate purchasing/selling of crypto currency
 
 3. Provide Charts
+
+4. Fixed the search history where we are able to click on the crypto that we searched before and it will directly link to the crypto page
+
+5. Fixed the search bar where it will show the whole list of crypto market based on the relevant letters/words typed
 
 # Image
 
